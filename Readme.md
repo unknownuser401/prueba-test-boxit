@@ -14,36 +14,54 @@ Una vez inicializado el servidor se puede probar el proyecto
 ## Prueba del Proyecto:
 probar los endpoints del api por medio de Postman o Thunderbolt
 
-## Estructura del proyecto:
-boxit-store/                     # Carpeta raíz del proyecto
-├── src/                         # Carpeta principal del código fuente
-│   ├── controllers/             # Controladores: Manejan la lógica de las rutas
-│   │   ├── ProductoController.ts # Controlador para la entidad Producto
-│   │   ├── UsuarioController.ts  # Controlador para la entidad Usuario
-│   │   ├── PedidoController.ts   # Controlador para la entidad Pedido
-│   │   └── DetallePedidoController.ts # Controlador para la entidad DetallePedido
-│   ├── models/                  # Modelos: Definen las entidades y su relación con la base de datos
-│   │   ├── Producto.ts          # Modelo para la entidad Producto
-│   │   ├── Usuario.ts           # Modelo para la entidad Usuario
-│   │   ├── Pedido.ts            # Modelo para la entidad Pedido
-│   │   ├── DetallePedido.ts     # Modelo para la entidad DetallePedido
-│   │   └── index.ts             # Configuración de Sequelize y exportación de modelos
-│   ├── routes/                  # Rutas: Definen los endpoints de la API
-│   │   ├── ProductoRoutes.ts    # Rutas para la entidad Producto
-│   │   ├── UsuarioRoutes.ts     # Rutas para la entidad Usuario
-│   │   ├── PedidoRoutes.ts      # Rutas para la entidad Pedido
-│   │   └── DetallePedidoRoutes.ts # Rutas para la entidad DetallePedido
-│   ├── services/                # Servicios: Lógica de negocio y acceso a datos
-│   │   ├── ProductoService.ts   # Servicio para la entidad Producto
-│   │   ├── UsuarioService.ts    # Servicio para la entidad Usuario
-│   │   ├── PedidoService.ts     # Servicio para la entidad Pedido
-│   │   └── DetallePedidoService.ts # Servicio para la entidad DetallePedido
-│   ├── utils/                   # Utilidades: Funciones auxiliares y helpers
-│   │   ├── errorHandler.ts      # Manejo centralizado de errores
-│   │   ├── logger.ts            # Utilidad para logging
-│   │   └── validators.ts        # Validaciones personalizadas
-│   └── index.ts                 # Punto de entrada de la aplicación (configuración de Express y servidor)
-├── scripts/                     # Scripts y archivos de configuración
-│   └── create-tables.sql        # Script SQL para crear las tablas en la base de datos
-├── tsconfig.json                # Configuración de TypeScript para el proyecto
-└── package.json                 # Archivo de configuración de npm (dependencias y scripts)
+## Estructura del Proyecto
+
+- **`boxit-store/`**
+  - **`src/`**
+    - **`controllers/`**
+      - `ProductoController.ts`
+      - `UsuarioController.ts`
+      - `PedidoController.ts`
+      - `DetallePedidoController.ts`
+    - **`models/`**
+      - `Producto.ts`
+      - `Usuario.ts`
+      - `Pedido.ts`
+      - `DetallePedido.ts`
+      - `index.ts`
+    - **`routes/`**
+      - `ProductoRoutes.ts`
+      - `UsuarioRoutes.ts`
+      - `PedidoRoutes.ts`
+      - `DetallePedidoRoutes.ts`
+    - **`services/`**
+      - `ProductoService.ts`
+      - `UsuarioService.ts`
+      - `PedidoService.ts`
+      - `DetallePedidoService.ts`
+    - **`utils/`**
+      - `errorHandler.ts`
+      - `logger.ts`
+      - `validators.ts`
+    - `index.ts`
+  - **`scripts/`**
+    - `create-tables.sql`
+  - `tsconfig.json`
+  - `package.json`
+
+### Explicación de la Estructura
+
+- **`src/`**: Contiene todo el código fuente de la aplicación.
+  - **`controllers/`**: Controladores para manejar la lógica de las rutas.
+  - **`models/`**: Modelos para definir las entidades y su relación con la base de datos.
+  - **`routes/`**: Rutas de la API.
+  - **`services/`**: Lógica de negocio y acceso a datos.
+  - **`utils/`**: Utilidades y funciones auxiliares.
+  - **`index.ts`**: Punto de entrada de la aplicación.
+
+- **`scripts/`**: Scripts y archivos de configuración.
+  - **`create-tables.sql`**: Script SQL para crear las tablas en la base de datos.
+
+- **`tsconfig.json`**: Configuración de TypeScript.
+
+- **`package.json`**: Configuración de npm (dependencias y scripts).
