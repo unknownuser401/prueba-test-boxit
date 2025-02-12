@@ -1,4 +1,4 @@
-# Boxit Store API
+# Prueba Tecnica Boxit Store APP
 
 ## Instalación:
 
