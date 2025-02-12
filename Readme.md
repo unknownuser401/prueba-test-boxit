@@ -12,7 +12,7 @@ npm start
 Una vez inicializado el servidor se puede probar el proyecto
 
 ## Prueba del Proyecto:
-probar los endpoints del api por medio de Postman o Thunderbolt
+Probar los endpoints del api por medio de Postman o Thunderbolt
 
 ## Estructura del Proyecto
 
