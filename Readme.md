@@ -39,10 +39,16 @@ Probar los endpoints del api por medio de Postman o Thunderbolt
       - `UsuarioService.ts`
       - `PedidoService.ts`
       - `DetallePedidoService.ts`
+      - `Reportes.ts`
     - **`utils/`**
       - `errorHandler.ts`
       - `logger.ts`
       - `validators.ts`
+    - **`validators/`**
+       - `DetallePedidoValidator.ts`
+       - `PedidoValidator.ts`
+       - `ProductoValidator.ts`
+       - `UsuarioValidator.ts`
     - `index.ts`
   - **`scripts/`**
     - `create-tables.sql`
@@ -57,6 +63,7 @@ Probar los endpoints del api por medio de Postman o Thunderbolt
   - **`routes/`**: Rutas de la API.
   - **`services/`**: Lógica de negocio y acceso a datos.
   - **`utils/`**: Utilidades y funciones auxiliares.
+  - **`validators/`**: Validador de los modelos y controladores.
   - **`index.ts`**: Punto de entrada de la aplicación.
 
 - **`scripts/`**: Scripts y archivos de configuración.
